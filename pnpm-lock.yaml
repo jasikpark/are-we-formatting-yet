@@ -15,8 +15,8 @@ dependencies:
     specifier: 19.0.0-rc-bf7e210c-20241017
     version: 19.0.0-rc-bf7e210c-20241017(react-dom@19.0.0-rc-bf7e210c-20241017)(react@19.0.0-rc-bf7e210c-20241017)(webpack@5.96.1)
   waku:
-    specifier: 0.21.5
-    version: 0.21.5(react-dom@19.0.0-rc-bf7e210c-20241017)(react-server-dom-webpack@19.0.0-rc-bf7e210c-20241017)(react@19.0.0-rc-bf7e210c-20241017)
+    specifier: 0.21.6
+    version: 0.21.6(react-dom@19.0.0-rc-bf7e210c-20241017)(react-server-dom-webpack@19.0.0-rc-bf7e210c-20241017)(react@19.0.0-rc-bf7e210c-20241017)
 
 devDependencies:
   '@types/react':
@@ -428,13 +428,13 @@ packages:
     dev: false
     optional: true
 
-  /@hono/node-server@1.13.2(hono@4.6.5):
-    resolution: {integrity: sha512-0w8nEmAyx0Ul0CQp8BL2VtAG4YVdpzXd/mvvM+l0G5Oq22pUyHS+KeFFPSY+czLOF5NAiV3MUNPD1n14Ol5svg==}
+  /@hono/node-server@1.13.5(hono@4.6.9):
+    resolution: {integrity: sha512-lSo+CFlLqAFB4fX7ePqI9nauEn64wOfJHAfc9duYFTvAG3o416pC0nTGeNjuLHchLedH+XyWda5v79CVx1PIjg==}
     engines: {node: '>=18.14.1'}
     peerDependencies:
       hono: ^4
     dependencies:
-      hono: 4.6.5
+      hono: 4.6.9
     dev: false
 
   /@isaacs/cliui@8.0.2:
@@ -653,8 +653,8 @@ packages:
     dev: false
     optional: true
 
-  /@swc/core-darwin-arm64@1.7.36:
-    resolution: {integrity: sha512-8vDczXzCgv3ceTPhEivlpGprN44YlrCK1nbfU9g2TrhV/Aiqi09W/eM5zLesdoM1Z3mJl492gc/8nlTkpDdusw==}
+  /@swc/core-darwin-arm64@1.9.1:
+    resolution: {integrity: sha512-2/ncHSCdAh5OHem1fMITrWEzzl97OdMK1PHc9CkxSJnphLjRubfxB5sbc5tDhcO68a5tVy+DxwaBgDec3PXnOg==}
     engines: {node: '>=10'}
     cpu: [arm64]
     os: [darwin]
@@ -662,8 +662,8 @@ packages:
     dev: false
     optional: true
 
-  /@swc/core-darwin-x64@1.7.36:
-    resolution: {integrity: sha512-Pa2Gao7+Wf5m3SsK4abKRtd48AtoUnJInvaC3d077swBfgZjbjUbQvcpdc2dOeQtWwo49rFqUZJonMsL0jnPgQ==}
+  /@swc/core-darwin-x64@1.9.1:
+    resolution: {integrity: sha512-4MDOFC5zmNqRJ9RGFOH95oYf27J9HniLVpB1pYm2gGeNHdl2QvDMtx2QTuMHQ6+OTn/3y1BHYuhBGp7d405oLA==}
     engines: {node: '>=10'}
     cpu: [x64]
     os: [darwin]
@@ -671,8 +671,8 @@ packages:
     dev: false
     optional: true
 
-  /@swc/core-linux-arm-gnueabihf@1.7.36:
-    resolution: {integrity: sha512-3YsMWd7V+WZEjbfBnLkkz/olcRBa8nyoK0iIOnNARJBMcYaJxjkJSMZpmSojCnIVwvjA1N83CPAbUL+W+fCnHg==}
+  /@swc/core-linux-arm-gnueabihf@1.9.1:
+    resolution: {integrity: sha512-eVW/BjRW8/HpLe3+1jRU7w7PdRLBgnEEYTkHJISU8805/EKT03xNZn6CfaBpKfeAloY4043hbGzE/NP9IahdpQ==}
     engines: {node: '>=10'}
     cpu: [arm]
     os: [linux]
@@ -680,8 +680,8 @@ packages:
     dev: false
     optional: true
 
-  /@swc/core-linux-arm64-gnu@1.7.36:
-    resolution: {integrity: sha512-lqM3aBB7kJazJYOwHeA5OGNLqXoQPZ/76b3dV+XcjN1GhD0CcXz6mW5PRYVin6OSN1eKrKBKJjtDA1mqADDEvw==}
+  /@swc/core-linux-arm64-gnu@1.9.1:
+    resolution: {integrity: sha512-8m3u1v8R8NgI/9+cHMkzk14w87blSy3OsQPWPfhOL+XPwhyLPvat+ahQJb2nZmltjTgkB4IbzKFSfbuA34LmNA==}
     engines: {node: '>=10'}
     cpu: [arm64]
     os: [linux]
@@ -689,8 +689,8 @@ packages:
     dev: false
     optional: true
 
-  /@swc/core-linux-arm64-musl@1.7.36:
-    resolution: {integrity: sha512-bqei2YDzvUfG0pth5W2xJaj0eG4XWYk0d/NJ75vBX6bkIzK6dC8iuKQ41jOfUWonnrAs7rTDDJW0sTn/evvRdw==}
+  /@swc/core-linux-arm64-musl@1.9.1:
+    resolution: {integrity: sha512-hpT0sQAZnW8l02I289yeyFfT9llGO9PzKDxUq8pocKtioEHiElRqR53juCWoSmzuWi+6KX7zUJ0NKCBrc8pmDg==}
     engines: {node: '>=10'}
     cpu: [arm64]
     os: [linux]
@@ -698,8 +698,8 @@ packages:
     dev: false
     optional: true
 
-  /@swc/core-linux-x64-gnu@1.7.36:
-    resolution: {integrity: sha512-03maXTUyaBjeCxlDltmdzHje1ryQt1C4OWmmNgSSRXjLb+GNnAenwOJMSrcvHP/aNClD2pwsFCnYKDGy+sYE6w==}
+  /@swc/core-linux-x64-gnu@1.9.1:
+    resolution: {integrity: sha512-sGFdpdAYusk/ropHiwtXom2JrdaKPxl8MqemRv6dvxZq1Gm/GdmOowxdXIPjCgBGMgoXVcgNviH6CgiO5q+UtA==}
     engines: {node: '>=10'}
     cpu: [x64]
     os: [linux]
@@ -707,8 +707,8 @@ packages:
     dev: false
     optional: true
 
-  /@swc/core-linux-x64-musl@1.7.36:
-    resolution: {integrity: sha512-XXysqLkvjtQnXm1zHqLhy00UYPv/gk5OtwR732X+piNisnEbcJBqI8Qp9O7YvLWllRcoP8IMBGDWLGdGLSpViA==}
+  /@swc/core-linux-x64-musl@1.9.1:
+    resolution: {integrity: sha512-YtNLNwIWs0Z2+XgBs6+LrCIGtfCDtNr4S4b6Q5HDOreEIGzSvhkef8eyBI5L+fJ2eGov4b7iEo61C4izDJS5RA==}
     engines: {node: '>=10'}
     cpu: [x64]
     os: [linux]
@@ -716,8 +716,8 @@ packages:
     dev: false
     optional: true
 
-  /@swc/core-win32-arm64-msvc@1.7.36:
-    resolution: {integrity: sha512-k7+dmb13a/zPw+E4XYfPmLZFWJgcOcBRKIjYl9nQErtYsgsg3Ji6TBbsvJVETy23lNHyewZ17V5Vq6NzaG0hzg==}
+  /@swc/core-win32-arm64-msvc@1.9.1:
+    resolution: {integrity: sha512-qSxD3uZW2vSiHqUt30vUi0PB92zDh9bjqh5YKpfhhVa7h1vt/xXhlid8yMvSNToTfzhRrTEffOAPUr7WVoyQUA==}
     engines: {node: '>=10'}
     cpu: [arm64]
     os: [win32]
@@ -725,8 +725,8 @@ packages:
     dev: false
     optional: true
 
-  /@swc/core-win32-ia32-msvc@1.7.36:
-    resolution: {integrity: sha512-ridD3ay6YM2PEYHZXXFN+edYEv0FOynaqOBP+NSnGNHA35azItIjoIe+KNi4WltGtAjpKCHSpjGCNfna12wdYQ==}
+  /@swc/core-win32-ia32-msvc@1.9.1:
+    resolution: {integrity: sha512-C3fPEwyX/WRPlX6zIToNykJuz1JkZX0sk8H1QH2vpnKuySUkt/Ur5K2FzLgSWzJdbfxstpgS151/es0VGAD+ZA==}
     engines: {node: '>=10'}
     cpu: [ia32]
     os: [win32]
@@ -734,8 +734,8 @@ packages:
     dev: false
     optional: true
 
-  /@swc/core-win32-x64-msvc@1.7.36:
-    resolution: {integrity: sha512-j1z2Z1Ln9d0E3dHsPkC1K9XDh0ojhRPwV+GfRTu4D61PE+aYhYLvbJC6xPvL4/204QrStRS7eDu3m+BcDp3rgQ==}
+  /@swc/core-win32-x64-msvc@1.9.1:
+    resolution: {integrity: sha512-2XZ+U1AyVsOAXeH6WK1syDm7+gwTjA8fShs93WcbxnK7HV+NigDlvr4124CeJLTHyh3fMh1o7+CnQnaBJhlysQ==}
     engines: {node: '>=10'}
     cpu: [x64]
     os: [win32]
@@ -743,8 +743,8 @@ packages:
     dev: false
     optional: true
 
-  /@swc/core@1.7.36:
-    resolution: {integrity: sha512-bu7ymMX+LCJOSSrKank25Jaq66ymLVA9fOUuy4ck3/6rbXdLw+pIJPnIDKQ9uNcxww8KDxOuJk9Ui9pqR+aGFw==}
+  /@swc/core@1.9.1:
+    resolution: {integrity: sha512-OnPc+Kt5oy3xTvr/KCUOqE9ptJcWbyQgAUr1ydh9EmbBcmJTaO1kfQCxm/axzJi6sKeDTxL9rX5zvLOhoYIaQw==}
     engines: {node: '>=10'}
     requiresBuild: true
     peerDependencies:
@@ -756,16 +756,16 @@ packages:
       '@swc/counter': 0.1.3
       '@swc/types': 0.1.14
     optionalDependencies:
-      '@swc/core-darwin-arm64': 1.7.36
-      '@swc/core-darwin-x64': 1.7.36
-      '@swc/core-linux-arm-gnueabihf': 1.7.36
-      '@swc/core-linux-arm64-gnu': 1.7.36
-      '@swc/core-linux-arm64-musl': 1.7.36
-      '@swc/core-linux-x64-gnu': 1.7.36
-      '@swc/core-linux-x64-musl': 1.7.36
-      '@swc/core-win32-arm64-msvc': 1.7.36
-      '@swc/core-win32-ia32-msvc': 1.7.36
-      '@swc/core-win32-x64-msvc': 1.7.36
+      '@swc/core-darwin-arm64': 1.9.1
+      '@swc/core-darwin-x64': 1.9.1
+      '@swc/core-linux-arm-gnueabihf': 1.9.1
+      '@swc/core-linux-arm64-gnu': 1.9.1
+      '@swc/core-linux-arm64-musl': 1.9.1
+      '@swc/core-linux-x64-gnu': 1.9.1
+      '@swc/core-linux-x64-musl': 1.9.1
+      '@swc/core-win32-arm64-msvc': 1.9.1
+      '@swc/core-win32-ia32-msvc': 1.9.1
+      '@swc/core-win32-x64-msvc': 1.9.1
     dev: false
 
   /@swc/counter@0.1.3:
@@ -852,8 +852,8 @@ packages:
       csstype: 3.1.3
     dev: true
 
-  /@vitejs/plugin-react@4.3.2(vite@5.4.9):
-    resolution: {integrity: sha512-hieu+o05v4glEBucTcKMK3dlES0OeJlD9YVOAPraVMOInBCwzumaIFiUjr4bHK7NPgnAHgiskUoceKercrN8vg==}
+  /@vitejs/plugin-react@4.3.3(vite@5.4.10):
+    resolution: {integrity: sha512-NooDe9GpHGqNns1i8XDERg0Vsg5SSYRhRxxyTGogUdkdNt47jal+fbuYi+Yfq6pzRCKXyoPcWisfxE6RIM3GKA==}
     engines: {node: ^14.18.0 || >=16.0.0}
     peerDependencies:
       vite: ^4.2.0 || ^5.0.0
@@ -863,7 +863,7 @@ packages:
       '@babel/plugin-transform-react-jsx-source': 7.25.9(@babel/core@7.26.0)
       '@types/babel__core': 7.20.5
       react-refresh: 0.14.2
-      vite: 5.4.9
+      vite: 5.4.10
     transitivePeerDependencies:
       - supports-color
     dev: false
@@ -1401,8 +1401,8 @@ packages:
       function-bind: 1.1.2
     dev: true
 
-  /hono@4.6.5:
-    resolution: {integrity: sha512-qsmN3V5fgtwdKARGLgwwHvcdLKursMd+YOt69eGpl1dUCJb8mCd7hZfyZnBYjxCegBG7qkJRQRUy2oO25yHcyQ==}
+  /hono@4.6.9:
+    resolution: {integrity: sha512-p/pN5yZLuZaHzyAOT2nw2/Ud6HhJHYmDNGH6Ck1OWBhPMVeM1r74jbCRwNi0gyFRjjbsGgoHbOyj7mT1PDNbTw==}
     engines: {node: '>=16.9.0'}
     dev: false
 
@@ -2073,8 +2073,8 @@ packages:
     resolution: {integrity: sha512-EPD5q1uXyFxJpCrLnCc1nHnq3gOa6DZBocAIiI2TaSCA7VCJ1UJDMagCzIkXNsUYfD1daK//LTEQ8xiIbrHtcw==}
     dev: true
 
-  /vite@5.4.9:
-    resolution: {integrity: sha512-20OVpJHh0PAM0oSOELa5GaZNWeDjcAvQjGXy2Uyr+Tp+/D2/Hdz6NLgpJLsarPTA2QJ6v8mX2P1ZfbsSKvdMkg==}
+  /vite@5.4.10:
+    resolution: {integrity: sha512-1hvaPshuPUtxeQ0hsVH3Mud0ZanOLwVTneA1EgbAM5LhaZEqyPWGRQ7BtaMvUrTDeEaC8pxtj6a6jku3x4z6SQ==}
     engines: {node: ^18.0.0 || >=20.0.0}
     hasBin: true
     peerDependencies:
@@ -2111,25 +2111,25 @@ packages:
       fsevents: 2.3.3
     dev: false
 
-  /waku@0.21.5(react-dom@19.0.0-rc-bf7e210c-20241017)(react-server-dom-webpack@19.0.0-rc-bf7e210c-20241017)(react@19.0.0-rc-bf7e210c-20241017):
-    resolution: {integrity: sha512-+Bvw76GDXaJjB/12aBbES72hRvb7a95mQZ91cHwQMvEwM/8IxhRrprNSeQjMZ0XjvLDvEor0kHuQO8a9bnZ4dg==}
+  /waku@0.21.6(react-dom@19.0.0-rc-bf7e210c-20241017)(react-server-dom-webpack@19.0.0-rc-bf7e210c-20241017)(react@19.0.0-rc-bf7e210c-20241017):
+    resolution: {integrity: sha512-pYs2EnVVvTFj/jPlcgOCfMu04ly3BpymM+Yi+Iw+lWcyNwUnr7wt9hx+Env2BJh1iJcBbWSV8+IlK3wy3yDbog==}
     engines: {node: ^20.8.0 || ^18.17.0 || ^22.7.0}
     hasBin: true
     peerDependencies:
-      react: 19.0.0-rc-bf7e210c-20241017
-      react-dom: 19.0.0-rc-bf7e210c-20241017
-      react-server-dom-webpack: 19.0.0-rc-bf7e210c-20241017
+      react: 19.0.0-rc-5c56b873-20241107
+      react-dom: 19.0.0-rc-5c56b873-20241107
+      react-server-dom-webpack: 19.0.0-rc-5c56b873-20241107
     dependencies:
-      '@hono/node-server': 1.13.2(hono@4.6.5)
-      '@swc/core': 1.7.36
-      '@vitejs/plugin-react': 4.3.2(vite@5.4.9)
+      '@hono/node-server': 1.13.5(hono@4.6.9)
+      '@swc/core': 1.9.1
+      '@vitejs/plugin-react': 4.3.3(vite@5.4.10)
       dotenv: 16.4.5
-      hono: 4.6.5
+      hono: 4.6.9
       react: 19.0.0-rc-bf7e210c-20241017
       react-dom: 19.0.0-rc-bf7e210c-20241017(react@19.0.0-rc-bf7e210c-20241017)
       react-server-dom-webpack: 19.0.0-rc-bf7e210c-20241017(react-dom@19.0.0-rc-bf7e210c-20241017)(react@19.0.0-rc-bf7e210c-20241017)(webpack@5.96.1)
       rsc-html-stream: 0.0.3
-      vite: 5.4.9
+      vite: 5.4.10
     transitivePeerDependencies:
       - '@swc/helpers'
       - '@types/node'
