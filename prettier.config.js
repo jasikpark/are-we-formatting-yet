@@ -2,10 +2,6 @@
 
 /** @type {import("prettier").Config} */
 export default {
-  // Standard prettier options
-  singleQuote: true,
-  semi: true,
-  // Since prettier 3.0, manually specifying plugins is required
   plugins: [
     "@ianvs/prettier-plugin-sort-imports",
     "prettier-plugin-tailwindcss",
@@ -20,7 +16,6 @@ export default {
     "",
     "^[./]",
   ],
-  importOrderParserPlugins: ["typescript", "jsx", "decorators-legacy"],
+  importOrderParserPlugins: ["typescript", "jsx"],
   importOrderTypeScriptVersion: "5.0.0",
-  importOrderCaseSensitive: false,
 };
