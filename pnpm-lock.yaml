@@ -10,13 +10,13 @@ importers:
     dependencies:
       '@ianvs/prettier-plugin-sort-imports':
         specifier: ^4.4.0
-        version: 4.4.2(prettier@3.5.3)
+        version: 4.4.2(prettier@3.6.2)
       prettier:
         specifier: ^3.4.2
-        version: 3.5.3
+        version: 3.6.2
       prettier-plugin-tailwindcss:
         specifier: ^0.6.9
-        version: 0.6.13(@ianvs/prettier-plugin-sort-imports@4.4.2(prettier@3.5.3))(prettier@3.5.3)
+        version: 0.6.13(@ianvs/prettier-plugin-sort-imports@4.4.2(prettier@3.6.2))(prettier@3.6.2)
       react:
         specifier: 19.1.0
         version: 19.1.0
@@ -28,7 +28,7 @@ importers:
         version: 19.1.0(react-dom@19.1.0(react@19.1.0))(react@19.1.0)(webpack@5.96.1)
       waku:
         specifier: 0.23.3
-        version: 0.23.3(@types/node@24.0.3)(@types/react@19.1.6)(jiti@1.21.6)(react-dom@19.1.0(react@19.1.0))(react-server-dom-webpack@19.1.0(react-dom@19.1.0(react@19.1.0))(react@19.1.0)(webpack@5.96.1))(react@19.1.0)(terser@5.43.1)(yaml@2.6.0)
+        version: 0.23.3(@types/node@24.0.4)(@types/react@19.1.6)(jiti@1.21.6)(react-dom@19.1.0(react@19.1.0))(react-server-dom-webpack@19.1.0(react-dom@19.1.0(react@19.1.0))(react@19.1.0)(webpack@5.96.1))(react@19.1.0)(terser@5.43.1)(yaml@2.6.0)
     devDependencies:
       '@types/react':
         specifier: 19.1.6
@@ -536,8 +536,8 @@ packages:
   '@types/json-schema@7.0.15':
     resolution: {integrity: sha512-5+fP8P8MFNC+AyZCDxrB2pkZFPGzqQWUzpSeuuVLvm8VMcorNYavBqoFcxK8bQz4Qsbn4oUEEem4wDLfcysGHA==}
 
-  '@types/node@24.0.3':
-    resolution: {integrity: sha512-R4I/kzCYAdRLzfiCabn9hxWfbuHS573x+r0dJMkkzThEa7pbrcDWK+9zu3e7aBOouf+rQAciqPFMnxwr0aWgKg==}
+  '@types/node@24.0.4':
+    resolution: {integrity: sha512-ulyqAkrhnuNq9pB76DRBTkcS6YsmDALy6Ua63V8OhrOBgbcYt6IOdzpw5P1+dyRIyMerzLkeYWBeOXPpA9GMAA==}
 
   '@types/react-dom@19.1.6':
     resolution: {integrity: sha512-4hOiT/dwO8Ko0gV1m/TJZYk3y0KBnY9vzDh7W+DH17b2HFSOGgdj33dhihPeuy3l0q23+4e+hoXHV6hCC4dCXw==}
@@ -702,8 +702,8 @@ packages:
   electron-to-chromium@1.5.114:
     resolution: {integrity: sha512-DFptFef3iktoKlFQK/afbo274/XNWD00Am0xa7M8FZUepHlHT8PEuiNBoRfFHbH1okqN58AlhbJ4QTkcnXorjA==}
 
-  enhanced-resolve@5.18.1:
-    resolution: {integrity: sha512-ZSW3ma5GkcQBIpwZTSRAI8N71Uuwgs93IezB7mf7R60tC8ZbJideoDNKjHn2O9KIlx6rkGTTEk1xUCK2E1Y2Yg==}
+  enhanced-resolve@5.18.2:
+    resolution: {integrity: sha512-6Jw4sE1maoRJo3q8MsSIn2onJFbLTOjY9hlx4DZXmOKvLRd1Ok2kXmAGXaafL2+ijsJZ1ClYbl/pmqr9+k4iUQ==}
     engines: {node: '>=10.13.0'}
 
   entities@4.5.0:
@@ -946,8 +946,8 @@ packages:
       prettier-plugin-svelte:
         optional: true
 
-  prettier@3.5.3:
-    resolution: {integrity: sha512-QQtaxnoDJeAkDvDKWCLiwIXkTgRhwYDEQCghU9Z6q03iyek/rxRh/2lC3HB7P8sWT2xC/y5JDctPLBIGzHKbhw==}
+  prettier@3.6.2:
+    resolution: {integrity: sha512-I7AIg5boAr5R0FFtJ6rCfD+LFsWHp81dolrFD8S79U9tb8Az2nGrJncnMSnys+bpQJfRUzqs9hnA81OAA3hCuQ==}
     engines: {node: '>=14'}
     hasBin: true
 
@@ -1147,8 +1147,8 @@ packages:
     resolution: {integrity: sha512-/DyMEOrDgLKKIG0fmvtz+4dUX/3Ghozwgm6iPp8KRhvn+eQf9+Q7GWxVNMk3+uCPWfdXYC4ExGBckIXdFEfH1w==}
     engines: {node: '>=10.13.0'}
 
-  webpack-sources@3.3.2:
-    resolution: {integrity: sha512-ykKKus8lqlgXX/1WjudpIEjqsafjOTcOJqxnAbMLAu/KCsDCJ6GBtvscewvTkrn24HsnvFwrSCbenFrhtcCsAA==}
+  webpack-sources@3.3.3:
+    resolution: {integrity: sha512-yd1RBzSGanHkitROoPFd6qsrxt+oFhg/129YzheDGqeustzX0vTZJZsSsQjVQC4yzBQ56K55XU8gaNCtIzOnTg==}
     engines: {node: '>=10.13.0'}
 
   webpack@5.96.1:
@@ -1394,13 +1394,13 @@ snapshots:
     dependencies:
       hono: 4.8.3
 
-  '@ianvs/prettier-plugin-sort-imports@4.4.2(prettier@3.5.3)':
+  '@ianvs/prettier-plugin-sort-imports@4.4.2(prettier@3.6.2)':
     dependencies:
       '@babel/generator': 7.27.3
       '@babel/parser': 7.27.3
       '@babel/traverse': 7.27.3
       '@babel/types': 7.27.3
-      prettier: 3.5.3
+      prettier: 3.6.2
       semver: 7.7.2
     transitivePeerDependencies:
       - supports-color
@@ -1576,7 +1576,7 @@ snapshots:
 
   '@types/json-schema@7.0.15': {}
 
-  '@types/node@24.0.3':
+  '@types/node@24.0.4':
     dependencies:
       undici-types: 7.8.0
 
@@ -1588,7 +1588,7 @@ snapshots:
     dependencies:
       csstype: 3.1.3
 
-  '@vitejs/plugin-react@4.6.0(vite@7.0.0(@types/node@24.0.3)(jiti@1.21.6)(terser@5.43.1)(yaml@2.6.0))':
+  '@vitejs/plugin-react@4.6.0(vite@7.0.0(@types/node@24.0.4)(jiti@1.21.6)(terser@5.43.1)(yaml@2.6.0))':
     dependencies:
       '@babel/core': 7.27.7
       '@babel/plugin-transform-react-jsx-self': 7.27.1(@babel/core@7.27.7)
@@ -1596,7 +1596,7 @@ snapshots:
       '@rolldown/pluginutils': 1.0.0-beta.19
       '@types/babel__core': 7.20.5
       react-refresh: 0.17.0
-      vite: 7.0.0(@types/node@24.0.3)(jiti@1.21.6)(terser@5.43.1)(yaml@2.6.0)
+      vite: 7.0.0(@types/node@24.0.4)(jiti@1.21.6)(terser@5.43.1)(yaml@2.6.0)
     transitivePeerDependencies:
       - supports-color
 
@@ -1770,7 +1770,7 @@ snapshots:
 
   electron-to-chromium@1.5.114: {}
 
-  enhanced-resolve@5.18.1:
+  enhanced-resolve@5.18.2:
     dependencies:
       graceful-fs: 4.2.11
       tapable: 2.2.2
@@ -1879,7 +1879,7 @@ snapshots:
 
   jest-worker@27.5.1:
     dependencies:
-      '@types/node': 24.0.3
+      '@types/node': 24.0.4
       merge-stream: 2.0.0
       supports-color: 8.1.1
 
@@ -1934,13 +1934,13 @@ snapshots:
       picocolors: 1.1.1
       source-map-js: 1.2.1
 
-  prettier-plugin-tailwindcss@0.6.13(@ianvs/prettier-plugin-sort-imports@4.4.2(prettier@3.5.3))(prettier@3.5.3):
+  prettier-plugin-tailwindcss@0.6.13(@ianvs/prettier-plugin-sort-imports@4.4.2(prettier@3.6.2))(prettier@3.6.2):
     dependencies:
-      prettier: 3.5.3
+      prettier: 3.6.2
     optionalDependencies:
-      '@ianvs/prettier-plugin-sort-imports': 4.4.2(prettier@3.5.3)
+      '@ianvs/prettier-plugin-sort-imports': 4.4.2(prettier@3.6.2)
 
-  prettier@3.5.3: {}
+  prettier@3.6.2: {}
 
   punycode@2.3.1: {}
 
@@ -2083,7 +2083,7 @@ snapshots:
     dependencies:
       punycode: 2.3.1
 
-  vite@7.0.0(@types/node@24.0.3)(jiti@1.21.6)(terser@5.43.1)(yaml@2.6.0):
+  vite@7.0.0(@types/node@24.0.4)(jiti@1.21.6)(terser@5.43.1)(yaml@2.6.0):
     dependencies:
       esbuild: 0.25.0
       fdir: 6.4.6(picomatch@4.0.2)
@@ -2092,17 +2092,17 @@ snapshots:
       rollup: 4.44.0
       tinyglobby: 0.2.14
     optionalDependencies:
-      '@types/node': 24.0.3
+      '@types/node': 24.0.4
       fsevents: 2.3.3
       jiti: 1.21.6
       terser: 5.43.1
       yaml: 2.6.0
 
-  waku@0.23.3(@types/node@24.0.3)(@types/react@19.1.6)(jiti@1.21.6)(react-dom@19.1.0(react@19.1.0))(react-server-dom-webpack@19.1.0(react-dom@19.1.0(react@19.1.0))(react@19.1.0)(webpack@5.96.1))(react@19.1.0)(terser@5.43.1)(yaml@2.6.0):
+  waku@0.23.3(@types/node@24.0.4)(@types/react@19.1.6)(jiti@1.21.6)(react-dom@19.1.0(react@19.1.0))(react-server-dom-webpack@19.1.0(react-dom@19.1.0(react@19.1.0))(react@19.1.0)(webpack@5.96.1))(react@19.1.0)(terser@5.43.1)(yaml@2.6.0):
     dependencies:
       '@hono/node-server': 1.14.4(hono@4.8.3)
       '@swc/core': 1.12.6
-      '@vitejs/plugin-react': 4.6.0(vite@7.0.0(@types/node@24.0.3)(jiti@1.21.6)(terser@5.43.1)(yaml@2.6.0))
+      '@vitejs/plugin-react': 4.6.0(vite@7.0.0(@types/node@24.0.4)(jiti@1.21.6)(terser@5.43.1)(yaml@2.6.0))
       dotenv: 16.5.0
       hono: 4.8.3
       html-react-parser: 5.2.5(@types/react@19.1.6)(react@19.1.0)
@@ -2111,7 +2111,7 @@ snapshots:
       react-server-dom-webpack: 19.1.0(react-dom@19.1.0(react@19.1.0))(react@19.1.0)(webpack@5.96.1)
       rollup: 4.44.0
       rsc-html-stream: 0.0.6
-      vite: 7.0.0(@types/node@24.0.3)(jiti@1.21.6)(terser@5.43.1)(yaml@2.6.0)
+      vite: 7.0.0(@types/node@24.0.4)(jiti@1.21.6)(terser@5.43.1)(yaml@2.6.0)
     transitivePeerDependencies:
       - '@swc/helpers'
       - '@types/node'
@@ -2135,7 +2135,7 @@ snapshots:
 
   webpack-sources@3.2.3: {}
 
-  webpack-sources@3.3.2: {}
+  webpack-sources@3.3.3: {}
 
   webpack@5.96.1:
     dependencies:
@@ -2147,7 +2147,7 @@ snapshots:
       acorn: 8.15.0
       browserslist: 4.24.4
       chrome-trace-event: 1.0.4
-      enhanced-resolve: 5.18.1
+      enhanced-resolve: 5.18.2
       es-module-lexer: 1.7.0
       eslint-scope: 5.1.1
       events: 3.3.0
@@ -2161,7 +2161,7 @@ snapshots:
       tapable: 2.2.2
       terser-webpack-plugin: 5.3.14(webpack@5.96.1)
       watchpack: 2.4.4
-      webpack-sources: 3.3.2
+      webpack-sources: 3.3.3
     transitivePeerDependencies:
       - '@swc/core'
       - esbuild
