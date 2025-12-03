@@ -40,8 +40,8 @@ importers:
         specifier: 10.4.21
         version: 10.4.21(postcss@8.5.6)
       tailwindcss:
-        specifier: 4.1.13
-        version: 4.1.13
+        specifier: 4.1.17
+        version: 4.1.17
       typescript:
         specifier: 5.9.3
         version: 5.9.3
@@ -963,6 +963,7 @@ packages:
   react-server-dom-webpack@19.2.0:
     resolution: {integrity: sha512-ar2H1q9SvonShYYYszHx7gE3v9NF3K01AvrIvQMIRNXj+CiUDjI2C7XKexDSlOzqwSlxgDivaMdYwfEBYD6NjQ==}
     engines: {node: '>=0.10.0'}
+    deprecated: Critical Security Vulnerability in React Server Components
     peerDependencies:
       react: ^19.2.0
       react-dom: ^19.2.0
@@ -1028,8 +1029,8 @@ packages:
     resolution: {integrity: sha512-MpUEN2OodtUzxvKQl72cUF7RQ5EiHsGvSsVG0ia9c5RbWGL2CI4C7EpPS8UTBIplnlzZiNuV56w+FuNxy3ty2Q==}
     engines: {node: '>=10'}
 
-  tailwindcss@4.1.13:
-    resolution: {integrity: sha512-i+zidfmTqtwquj4hMEwdjshYYgMbOrPzb9a0M3ZgNa0JMoZeFC6bxZvO8yr8ozS6ix2SDz0+mvryPeBs2TFE+w==}
+  tailwindcss@4.1.17:
+    resolution: {integrity: sha512-j9Ee2YjuQqYT9bbRTfTZht9W/ytp5H+jJpZKiYdP/bpnXARAuELt9ofP0lPnmHjbga7SNQIxdTAXCmtKVYjN+Q==}
 
   tapable@2.3.0:
     resolution: {integrity: sha512-g9ljZiwki/LfxmQADO3dEY1CbpmXT5Hm2fJ+QaGKwSXUylMybePR7/67YW7jOrrvjEgL1Fmz5kzyAjWVWLlucg==}
@@ -2024,7 +2025,7 @@ snapshots:
     dependencies:
       has-flag: 4.0.0
 
-  tailwindcss@4.1.13: {}
+  tailwindcss@4.1.17: {}
 
   tapable@2.3.0: {}
 
