@@ -16,7 +16,7 @@ importers:
         version: 3.7.3
       prettier-plugin-tailwindcss:
         specifier: ^0.7.0
-        version: 0.7.1(@ianvs/prettier-plugin-sort-imports@4.7.0(prettier@3.7.3))(prettier@3.7.3)
+        version: 0.7.2(@ianvs/prettier-plugin-sort-imports@4.7.0(prettier@3.7.3))(prettier@3.7.3)
       react:
         specifier: 19.2.0
         version: 19.2.0
@@ -884,8 +884,8 @@ packages:
     resolution: {integrity: sha512-3Ybi1tAuwAP9s0r1UQ2J4n5Y0G05bJkpUIO0/bI9MhwmD70S5aTWbXGBwxHrelT+XM1k6dM0pk+SwNkpTRN7Pg==}
     engines: {node: ^10 || ^12 || >=14}
 
-  prettier-plugin-tailwindcss@0.7.1:
-    resolution: {integrity: sha512-Bzv1LZcuiR1Sk02iJTS1QzlFNp/o5l2p3xkopwOrbPmtMeh3fK9rVW5M3neBQzHq+kGKj/4LGQMTNcTH4NGPtQ==}
+  prettier-plugin-tailwindcss@0.7.2:
+    resolution: {integrity: sha512-LkphyK3Fw+q2HdMOoiEHWf93fNtYJwfamoKPl7UwtjFQdei/iIBoX11G6j706FzN3ymX9mPVi97qIY8328vdnA==}
     engines: {node: '>=20.19'}
     peerDependencies:
       '@ianvs/prettier-plugin-sort-imports': '*'
@@ -963,6 +963,7 @@ packages:
   react-server-dom-webpack@19.2.0:
     resolution: {integrity: sha512-ar2H1q9SvonShYYYszHx7gE3v9NF3K01AvrIvQMIRNXj+CiUDjI2C7XKexDSlOzqwSlxgDivaMdYwfEBYD6NjQ==}
     engines: {node: '>=0.10.0'}
+    deprecated: Critical Security Vulnerability in React Server Components
     peerDependencies:
       react: ^19.2.0
       react-dom: ^19.2.0
@@ -1920,7 +1921,7 @@ snapshots:
       picocolors: 1.1.1
       source-map-js: 1.2.1
 
-  prettier-plugin-tailwindcss@0.7.1(@ianvs/prettier-plugin-sort-imports@4.7.0(prettier@3.7.3))(prettier@3.7.3):
+  prettier-plugin-tailwindcss@0.7.2(@ianvs/prettier-plugin-sort-imports@4.7.0(prettier@3.7.3))(prettier@3.7.3):
     dependencies:
       prettier: 3.7.3
     optionalDependencies:
