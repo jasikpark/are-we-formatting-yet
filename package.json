@@ -1,16 +1,22 @@
 {
-	"name": "are-we-formatting-yet",
-	"type": "module",
-	"version": "0.0.1",
-	"scripts": {
-		"dev": "astro dev",
-		"build": "astro build",
-		"preview": "astro preview"
-	},
-	"dependencies": {
-		"astro": "^5.0.0"
-	},
-	"devDependencies": {
-		"@biomejs/biome": "2.3.14"
-	}
+  "name": "are-we-formatting-yet",
+  "type": "module",
+  "version": "0.0.1",
+  "scripts": {
+    "dev": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "format": "prettier --write .",
+    "format:check": "prettier --check .",
+    "biome": "biome check --fix",
+    "biome:check": "biome ci"
+  },
+  "dependencies": {
+    "astro": "^5.0.0",
+    "prettier": "^3.8.1",
+    "prettier-plugin-yaml": "^1.1.2"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "2.3.14"
+  }
 }

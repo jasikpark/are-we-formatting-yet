@@ -10,7 +10,13 @@ importers:
     dependencies:
       astro:
         specifier: ^5.0.0
-        version: 5.17.1(rollup@4.57.1)(typescript@5.9.3)
+        version: 5.17.1(rollup@4.57.1)(typescript@5.9.3)(yaml@2.8.2)
+      prettier:
+        specifier: ^3.8.1
+        version: 3.8.1
+      prettier-plugin-yaml:
+        specifier: ^1.1.2
+        version: 1.1.2(prettier@3.8.1)
     devDependencies:
       '@biomejs/biome':
         specifier: 2.3.14
@@ -1162,6 +1168,17 @@ packages:
     resolution: {integrity: sha512-3Ybi1tAuwAP9s0r1UQ2J4n5Y0G05bJkpUIO0/bI9MhwmD70S5aTWbXGBwxHrelT+XM1k6dM0pk+SwNkpTRN7Pg==}
     engines: {node: ^10 || ^12 || >=14}
 
+  prettier-plugin-yaml@1.1.2:
+    resolution: {integrity: sha512-r5HPX8AsSJxXBOgDJpi9SFln2/LpACikcXxVUYszkTWM30h3dyg3gMZgBYT4CNVFuMl1JwVYsqy18JqRrj0ZTg==}
+    engines: {node: '>=20'}
+    peerDependencies:
+      prettier: '>=3'
+
+  prettier@3.8.1:
+    resolution: {integrity: sha512-UOnG6LftzbdaHZcKoPFtOcCKztrQ57WkHDeRD9t/PTQtmT0NHSeWWepj6pS0z/N7+08BHFDQVUrfmfMRcZwbMg==}
+    engines: {node: '>=14'}
+    hasBin: true
+
   prismjs@1.30.0:
     resolution: {integrity: sha512-DEvV2ZF2r2/63V+tK8hQvrR2ZGn10srHbXviTlcv7Kpzw8jWiNTqbVgjO3IY8RxrrOUF8VPMQQFysYYYv0YZxw==}
     engines: {node: '>=6'}
@@ -1505,6 +1522,11 @@ packages:
 
   xxhash-wasm@1.1.0:
     resolution: {integrity: sha512-147y/6YNh+tlp6nd/2pWq38i9h6mz/EuQ6njIrmW8D1BS5nCqs0P6DG+m6zTGnNz5I+uhZ0SHxBs9BsPrwcKDA==}
+
+  yaml@2.8.2:
+    resolution: {integrity: sha512-mplynKqc1C2hTVYxd0PU2xQAc22TI1vShAYGksCCfxbn/dFwnHTNi1bvYsBTkhdUNtGIf5xNOg938rrSSYvS9A==}
+    engines: {node: '>= 14.6'}
+    hasBin: true
 
   yargs-parser@21.1.1:
     resolution: {integrity: sha512-tVpsJW7DdjecAiFpbIB1e3qxIQsE6NoPc5/eTdrbbIC4h0LVsWhnoa3g+m2HclBIujHzsxZ4VJVA+GUuc2/LBw==}
@@ -1986,7 +2008,7 @@ snapshots:
 
   array-iterate@2.0.1: {}
 
-  astro@5.17.1(rollup@4.57.1)(typescript@5.9.3):
+  astro@5.17.1(rollup@4.57.1)(typescript@5.9.3)(yaml@2.8.2):
     dependencies:
       '@astrojs/compiler': 2.13.1
       '@astrojs/internal-helpers': 0.7.5
@@ -2043,8 +2065,8 @@ snapshots:
       unist-util-visit: 5.1.0
       unstorage: 1.17.4
       vfile: 6.0.3
-      vite: 6.4.1
-      vitefu: 1.1.1(vite@6.4.1)
+      vite: 6.4.1(yaml@2.8.2)
+      vitefu: 1.1.1(vite@6.4.1(yaml@2.8.2))
       xxhash-wasm: 1.1.0
       yargs-parser: 21.1.1
       yocto-spinner: 0.2.3
@@ -2830,6 +2852,13 @@ snapshots:
       picocolors: 1.1.1
       source-map-js: 1.2.1
 
+  prettier-plugin-yaml@1.1.2(prettier@3.8.1):
+    dependencies:
+      prettier: 3.8.1
+      yaml: 2.8.2
+
+  prettier@3.8.1: {}
+
   prismjs@1.30.0: {}
 
   prompts@2.4.2:
@@ -3179,7 +3208,7 @@ snapshots:
       '@types/unist': 3.0.3
       vfile-message: 4.0.3
 
-  vite@6.4.1:
+  vite@6.4.1(yaml@2.8.2):
     dependencies:
       esbuild: 0.25.12
       fdir: 6.5.0(picomatch@4.0.3)
@@ -3189,10 +3218,11 @@ snapshots:
       tinyglobby: 0.2.15
     optionalDependencies:
       fsevents: 2.3.3
+      yaml: 2.8.2
 
-  vitefu@1.1.1(vite@6.4.1):
+  vitefu@1.1.1(vite@6.4.1(yaml@2.8.2)):
     optionalDependencies:
-      vite: 6.4.1
+      vite: 6.4.1(yaml@2.8.2)
 
   web-namespaces@2.0.1: {}
 
@@ -3209,6 +3239,8 @@ snapshots:
       strip-ansi: 7.1.2
 
   xxhash-wasm@1.1.0: {}
+
+  yaml@2.8.2: {}
 
   yargs-parser@21.1.1: {}
 
