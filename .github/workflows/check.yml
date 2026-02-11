@@ -15,7 +15,7 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd # v6
       - name: Setup Biome CLI
-        uses: biomejs/setup-biome@v2
+        uses: biomejs/setup-biome@29711cbb52afee00eb13aeb30636592f9edc0088 # v2
       - name: Run Biome
         run: biome ci
       - name: Setup pnpm
