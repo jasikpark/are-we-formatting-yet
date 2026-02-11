@@ -176,8 +176,6 @@ const activeCount = sorted.filter((f) => f.data.status === "active").length;
     const cards = document.querySelectorAll<HTMLElement>(".card");
     const resultCount = document.getElementById("result-count");
 
-
-
     let activeLanguage = "all";
 
     function filterCards() {
@@ -216,14 +214,26 @@ const activeCount = sorted.filter((f) => f.data.status === "active").length;
 
     search.addEventListener("input", filterCards);
 
-    chips.forEach((chip) => {
-        // TODO: if clicked second time, should reset to "all"
-        chip.addEventListener("click", () => {
-          for (const c of chips) {
+    const setActiveLanguage = (language: string) => {
+        for (const c of chips) {
             c.classList.remove("active");
+        }
+        const chip = document.querySelector<HTMLButtonElement>(`.chip[data-language='${language}']`);
+        if (!chip) {
+            throw new Error(`chip element not found for language ${language}`);
+        }
+        chip.classList.add("active");
+        activeLanguage = language;
+    };
+
+    chips.forEach((chip) => {
+        chip.addEventListener("click", (e) => {
+          if ((e.target as HTMLButtonElement | null)?.classList.contains("active")) {
+            setActiveLanguage("all");
+          } else {
+            setActiveLanguage(chip.dataset.language ?? "all");
           }
-          chip.classList.add("active");
-          activeLanguage = chip.dataset.language ?? "all";
+
           filterCards();
         });
     });
