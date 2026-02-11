@@ -1,0 +1,9 @@
+name: golines
+description: A Go code formatter that shortens long lines, in addition to all the formatting fixes done by gofmt.
+github: https://github.com/golangci/golines
+languages:
+  - Go
+license: MIT
+category: formatter
+status: active
+writtenIn: Go
