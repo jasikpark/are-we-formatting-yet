@@ -1,4 +1,5 @@
 ---
+
 import { getCollection } from "astro:content";
 import Layout from "../layouts/Layout.astro";
 
@@ -173,7 +174,9 @@ const activeCount = sorted.filter((f) => f.data.status === "active").length;
     const search = document.getElementById("search") as HTMLInputElement;
     const chips = document.querySelectorAll<HTMLButtonElement>(".chip");
     const cards = document.querySelectorAll<HTMLElement>(".card");
-    const resultCount = document.getElementById("result-count")!;
+    const resultCount = document.getElementById("result-count");
+
+
 
     let activeLanguage = "all";
 
@@ -201,6 +204,10 @@ const activeCount = sorted.filter((f) => f.data.status === "active").length;
             }
         });
 
+        if (!resultCount) {
+            throw new Error("resultCount element not found");
+        }
+
         resultCount.textContent =
             visible === cards.length
                 ? ""
@@ -212,10 +219,12 @@ const activeCount = sorted.filter((f) => f.data.status === "active").length;
     chips.forEach((chip) => {
         // TODO: if clicked second time, should reset to "all"
         chip.addEventListener("click", () => {
-            chips.forEach((c) => c.classList.remove("active"));
-            chip.classList.add("active");
-            activeLanguage = chip.dataset.language ?? "all";
-            filterCards();
+          for (const c of chips) {
+            c.classList.remove("active");
+          }
+          chip.classList.add("active");
+          activeLanguage = chip.dataset.language ?? "all";
+          filterCards();
         });
     });
 </script>
