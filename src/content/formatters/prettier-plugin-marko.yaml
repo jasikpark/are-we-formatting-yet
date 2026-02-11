@@ -1,0 +1,11 @@
+name: prettier-plugin-marko
+description: Prettier plugin for formatting Marko templates. Maintained by the Marko team.
+github: https://github.com/marko-js/prettier
+npm: prettier-plugin-marko
+languages:
+  - Marko
+license: MIT
+category: formatter
+status: maintained
+pluginFor: Prettier
+official: false

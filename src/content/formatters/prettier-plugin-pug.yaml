@@ -1,0 +1,11 @@
+name: "@prettier/plugin-pug"
+description: Official Prettier plugin for formatting Pug (Jade) templates.
+github: https://github.com/prettier/plugin-pug
+npm: "@prettier/plugin-pug"
+languages:
+  - Pug
+license: MIT
+category: formatter
+status: active
+pluginFor: Prettier
+official: true

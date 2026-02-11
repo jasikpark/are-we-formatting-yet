@@ -1,0 +1,11 @@
+name: "@prettier/plugin-ruby"
+description: Official Prettier plugin for formatting Ruby code. Runs a Ruby server for parsing.
+github: https://github.com/prettier/plugin-ruby
+npm: "@prettier/plugin-ruby"
+languages:
+  - Ruby
+license: MIT
+category: formatter
+status: maintained
+pluginFor: Prettier
+official: true

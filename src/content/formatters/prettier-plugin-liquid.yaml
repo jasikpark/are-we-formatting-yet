@@ -1,0 +1,11 @@
+name: "@shopify/prettier-plugin-liquid"
+description: Prettier plugin for formatting Liquid templates. Maintained by Shopify.
+github: https://github.com/Shopify/prettier-plugin-liquid
+npm: "@shopify/prettier-plugin-liquid"
+languages:
+  - Liquid
+license: MIT
+category: formatter
+status: active
+pluginFor: Prettier
+official: false

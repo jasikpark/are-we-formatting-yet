@@ -1,0 +1,11 @@
+name: prettier-plugin-solidity
+description: Prettier plugin for formatting Solidity smart contracts.
+github: https://github.com/prettier-solidity/prettier-plugin-solidity
+npm: prettier-plugin-solidity
+languages:
+  - Solidity
+license: MIT
+category: formatter
+status: active
+pluginFor: Prettier
+official: false

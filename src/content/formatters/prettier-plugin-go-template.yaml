@@ -1,0 +1,11 @@
+name: prettier-plugin-go-template
+description: Prettier plugin for formatting Go template files, commonly used with Hugo.
+github: https://github.com/NiklasPor/prettier-plugin-go-template
+npm: prettier-plugin-go-template
+languages:
+  - Go Template
+license: MIT
+category: formatter
+status: maintained
+pluginFor: Prettier
+official: false

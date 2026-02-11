@@ -1,0 +1,11 @@
+name: prettier-plugin-blade
+description: Prettier plugin for formatting Laravel Blade templates.
+github: https://github.com/shufo/prettier-plugin-blade
+npm: prettier-plugin-blade
+languages:
+  - Blade
+license: MIT
+category: formatter
+status: maintained
+pluginFor: Prettier
+official: false

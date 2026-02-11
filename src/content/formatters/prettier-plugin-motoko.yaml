@@ -1,0 +1,11 @@
+name: prettier-plugin-motoko
+description: Prettier plugin for formatting Motoko (Internet Computer) smart contract code. Maintained by DFINITY.
+github: https://github.com/dfinity/prettier-plugin-motoko
+npm: prettier-plugin-motoko
+languages:
+  - Motoko
+license: Apache-2.0
+category: formatter
+status: maintained
+pluginFor: Prettier
+official: false

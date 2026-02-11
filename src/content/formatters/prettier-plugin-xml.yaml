@@ -1,0 +1,11 @@
+name: "@prettier/plugin-xml"
+description: Official Prettier plugin for formatting XML documents.
+github: https://github.com/prettier/plugin-xml
+npm: "@prettier/plugin-xml"
+languages:
+  - XML
+license: MIT
+category: formatter
+status: active
+pluginFor: Prettier
+official: true

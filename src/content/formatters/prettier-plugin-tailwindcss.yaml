@@ -1,0 +1,11 @@
+name: prettier-plugin-tailwindcss
+description: Prettier plugin that automatically sorts Tailwind CSS classes. Maintained by Tailwind Labs.
+github: https://github.com/tailwindlabs/prettier-plugin-tailwindcss
+npm: prettier-plugin-tailwindcss
+languages:
+  - CSS
+license: MIT
+category: formatter
+status: active
+pluginFor: Prettier
+official: false

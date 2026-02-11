@@ -1,0 +1,11 @@
+name: prettier-plugin-sql-cst
+description: Prettier plugin for SQL using a concrete syntax tree for precise formatting. Supports multiple SQL dialects.
+github: https://github.com/nene/prettier-plugin-sql-cst
+npm: prettier-plugin-sql-cst
+languages:
+  - SQL
+license: GPL-2.0
+category: formatter
+status: active
+pluginFor: Prettier
+official: false

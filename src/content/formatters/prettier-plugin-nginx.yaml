@@ -1,0 +1,11 @@
+name: prettier-plugin-nginx
+description: Prettier plugin for formatting Nginx configuration files.
+github: https://github.com/jxddk/prettier-plugin-nginx
+npm: prettier-plugin-nginx
+languages:
+  - Nginx
+license: MIT
+category: formatter
+status: maintained
+pluginFor: Prettier
+official: false

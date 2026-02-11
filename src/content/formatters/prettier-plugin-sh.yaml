@@ -1,0 +1,13 @@
+name: prettier-plugin-sh
+description: Prettier plugin for shell scripts (bash/sh/zsh), Dockerfiles, .properties, .gitignore, and more.
+github: https://github.com/un-ts/prettier
+npm: prettier-plugin-sh
+languages:
+  - Shell
+  - Bash
+  - Dockerfile
+license: MIT
+category: formatter
+status: active
+pluginFor: Prettier
+official: false

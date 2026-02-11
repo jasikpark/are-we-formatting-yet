@@ -1,0 +1,11 @@
+name: prettier-plugin-astro
+description: Prettier plugin for formatting Astro components. Maintained by the Astro team.
+github: https://github.com/withastro/prettier-plugin-astro
+npm: prettier-plugin-astro
+languages:
+  - Astro
+license: MIT
+category: formatter
+status: active
+pluginFor: Prettier
+official: false

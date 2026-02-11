@@ -1,0 +1,11 @@
+name: prettier-plugin-svelte
+description: Prettier plugin for formatting Svelte components. Maintained by the Svelte team.
+github: https://github.com/sveltejs/prettier-plugin-svelte
+npm: prettier-plugin-svelte
+languages:
+  - Svelte
+license: MIT
+category: formatter
+status: active
+pluginFor: Prettier
+official: false

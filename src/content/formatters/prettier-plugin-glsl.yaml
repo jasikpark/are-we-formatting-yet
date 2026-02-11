@@ -1,0 +1,11 @@
+name: prettier-plugin-glsl
+description: Prettier plugin for formatting GLSL shader code (WebGL/OpenGL).
+github: https://github.com/NaridaL/glsl-language-toolkit
+npm: prettier-plugin-glsl
+languages:
+  - GLSL
+license: MIT
+category: formatter
+status: maintained
+pluginFor: Prettier
+official: false

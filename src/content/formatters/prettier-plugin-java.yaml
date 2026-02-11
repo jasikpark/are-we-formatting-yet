@@ -1,0 +1,11 @@
+name: prettier-plugin-java
+description: Prettier plugin for formatting Java source code. Maintained by JHipster.
+github: https://github.com/jhipster/prettier-java
+npm: prettier-plugin-java
+languages:
+  - Java
+license: Apache-2.0
+category: formatter
+status: active
+pluginFor: Prettier
+official: false

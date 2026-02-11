@@ -1,0 +1,11 @@
+name: prettier-plugin-gherkin
+description: Prettier plugin for formatting Gherkin (Cucumber BDD) feature files.
+github: https://github.com/mapado/prettier-plugin-gherkin
+npm: prettier-plugin-gherkin
+languages:
+  - Gherkin
+license: MIT
+category: formatter
+status: maintained
+pluginFor: Prettier
+official: false

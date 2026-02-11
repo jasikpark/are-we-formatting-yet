@@ -1,0 +1,11 @@
+name: prettier-plugin-jinja-template
+description: Prettier plugin for formatting Jinja2 templates.
+github: https://github.com/davidodenwald/prettier-plugin-jinja-template
+npm: prettier-plugin-jinja-template
+languages:
+  - Jinja2
+license: MIT
+category: formatter
+status: maintained
+pluginFor: Prettier
+official: false

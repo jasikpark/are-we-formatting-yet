@@ -1,0 +1,11 @@
+name: "@prettier/plugin-php"
+description: Official Prettier plugin for formatting PHP code.
+github: https://github.com/prettier/plugin-php
+npm: "@prettier/plugin-php"
+languages:
+  - PHP
+license: MIT
+category: formatter
+status: active
+pluginFor: Prettier
+official: true

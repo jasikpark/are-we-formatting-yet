@@ -104,6 +104,9 @@ const activeCount = sorted.filter((f) => f.data.status === "active").length;
                             <span class="card-license">
                                 {formatter.data.license}
                             </span>
+                            {formatter.data.npm && (
+                                <code class="card-npm">{formatter.data.npm}</code>
+                            )}
                             {formatter.data.writtenIn && (
                                 <span class="card-written-in">
                                     Built with {formatter.data.writtenIn}

@@ -1,0 +1,11 @@
+name: prettier-plugin-toml
+description: Prettier plugin for formatting TOML files.
+github: https://github.com/un-ts/prettier
+npm: prettier-plugin-toml
+languages:
+  - TOML
+license: MIT
+category: formatter
+status: active
+pluginFor: Prettier
+official: false

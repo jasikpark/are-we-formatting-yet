@@ -1,0 +1,11 @@
+name: prettier-plugin-apex
+description: Prettier plugin for formatting Salesforce Apex code.
+github: https://github.com/dangmai/prettier-plugin-apex
+npm: prettier-plugin-apex
+languages:
+  - Apex
+license: MIT
+category: formatter
+status: active
+pluginFor: Prettier
+official: false

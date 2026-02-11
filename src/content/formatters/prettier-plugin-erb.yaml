@@ -1,0 +1,11 @@
+name: prettier-plugin-erb
+description: Prettier plugin for formatting ERB (Ruby on Rails) templates.
+github: https://github.com/adamzapasnik/prettier-plugin-erb
+npm: prettier-plugin-erb
+languages:
+  - ERB
+license: MIT
+category: formatter
+status: maintained
+pluginFor: Prettier
+official: false

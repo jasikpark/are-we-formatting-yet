@@ -283,10 +283,16 @@ a {
 
 .card-meta {
   display: flex;
+  flex-wrap: wrap;
   gap: 12px;
   font-size: 0.8rem;
   color: var(--text-muted);
   margin-top: auto;
+}
+
+.card-npm {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
 }
 
 .card-links {
