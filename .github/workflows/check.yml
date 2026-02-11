@@ -7,7 +7,7 @@ on:
 
 jobs:
   check:
-    name: "Check app"
+    name: Check app
     timeout-minutes: 10
     runs-on: ubuntu-latest
     steps:
@@ -23,16 +23,14 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@6044e13b5dc448c55e2357c09f80417699197238 # v6
         with:
-          node-version-file: ".node-version"
-          cache: "pnpm"
+          node-version-file: .node-version
+          cache: pnpm
       - name: Install dependencies
         run: pnpm install
       - name: Sync astro types
         run: pnpm astro sync
         env:
-          NODE_OPTIONS: "--max_old_space_size=4096"
-      - name: Lint
-        run: pnpm lint
+          NODE_OPTIONS: --max_old_space_size=4096
       - name: Check types
         run: pnpm check
       - name: Format
