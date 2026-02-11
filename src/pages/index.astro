@@ -7,17 +7,25 @@ const allFormatters = await getCollection("formatters");
 const standalone = allFormatters.filter((f) => !f.data.pluginFor);
 const plugins = allFormatters.filter((f) => f.data.pluginFor);
 
-const byStatus = (a: (typeof allFormatters)[0], b: (typeof allFormatters)[0]) => {
-    const statusOrder: Record<string, number> = { active: 0, maintained: 1, deprecated: 2 };
-    const statusDiff = (statusOrder[a.data.status] ?? 3) - (statusOrder[b.data.status] ?? 3);
-    if (statusDiff !== 0) return statusDiff;
-    return a.data.name.localeCompare(b.data.name);
+const byStatus = (
+	a: (typeof allFormatters)[0],
+	b: (typeof allFormatters)[0],
+) => {
+	const statusOrder: Record<string, number> = {
+		active: 0,
+		maintained: 1,
+		deprecated: 2,
+	};
+	const statusDiff =
+		(statusOrder[a.data.status] ?? 3) - (statusOrder[b.data.status] ?? 3);
+	if (statusDiff !== 0) return statusDiff;
+	return a.data.name.localeCompare(b.data.name);
 };
 
 const sorted = [...standalone.sort(byStatus), ...plugins.sort(byStatus)];
 
 const allLanguages = [
-    ...new Set(sorted.flatMap((f) => f.data.languages)),
+	...new Set(sorted.flatMap((f) => f.data.languages)),
 ].sort();
 const activeCount = sorted.filter((f) => f.data.status === "active").length;
 ---
