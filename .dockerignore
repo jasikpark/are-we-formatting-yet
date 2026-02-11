@@ -1,0 +1,8 @@
+# flyctl launch added from .gitignore
+**/node_modules
+**/dist
+**/.astro
+
+# flyctl launch added from .jj/.gitignore
+.jj/*
+fly.toml
