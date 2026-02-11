@@ -1,0 +1,9 @@
+name: StyLua
+description: An opinionated Lua code formatter inspired by Prettier. Supports Lua 5.1-5.4 and Luau.
+github: https://github.com/JohnnyMorganz/StyLua
+languages:
+  - Lua
+license: MPL-2.0
+category: formatter
+status: active
+writtenIn: Rust

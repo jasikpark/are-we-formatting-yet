@@ -1,0 +1,11 @@
+name: Black
+description: The uncompromising Python code formatter. Deterministic output with minimal configuration.
+website: https://black.readthedocs.io
+github: https://github.com/psf/black
+docs: https://black.readthedocs.io/en/stable/
+languages:
+  - Python
+license: MIT
+category: formatter
+status: active
+writtenIn: Python

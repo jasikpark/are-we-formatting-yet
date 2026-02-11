@@ -1,0 +1,17 @@
+name: Biome
+description: A fast formatter and linter for JavaScript, TypeScript, JSX, JSON, and CSS. Designed as a Prettier-compatible drop-in replacement.
+website: https://biomejs.dev
+github: https://github.com/biomejs/biome
+docs: https://biomejs.dev/formatter/
+languages:
+  - JavaScript
+  - TypeScript
+  - JSX
+  - TSX
+  - JSON
+  - CSS
+  - GraphQL
+license: MIT
+category: linter-with-formatting
+status: active
+writtenIn: Rust

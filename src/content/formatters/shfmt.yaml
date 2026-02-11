@@ -1,0 +1,10 @@
+name: shfmt
+description: A shell script formatter supporting POSIX Shell, Bash, and mksh. Fast and configurable.
+github: https://github.com/mvdan/sh
+languages:
+  - Shell
+  - Bash
+license: BSD-3-Clause
+category: formatter
+status: active
+writtenIn: Go

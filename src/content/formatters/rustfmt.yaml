@@ -1,0 +1,10 @@
+name: rustfmt
+description: The official Rust code formatter. Formats Rust code according to style guidelines, shipped with the Rust toolchain.
+github: https://github.com/rust-lang/rustfmt
+docs: https://rust-lang.github.io/rustfmt/
+languages:
+  - Rust
+license: Apache-2.0
+category: formatter
+status: active
+writtenIn: Rust

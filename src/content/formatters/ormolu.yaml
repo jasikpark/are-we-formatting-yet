@@ -1,0 +1,9 @@
+name: Ormolu
+description: A formatter for Haskell source code that uses a single style with no configuration knobs.
+github: https://github.com/tweag/ormolu
+languages:
+  - Haskell
+license: BSD-3-Clause
+category: formatter
+status: active
+writtenIn: Haskell

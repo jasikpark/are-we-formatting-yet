@@ -1,0 +1,10 @@
+name: ocamlformat
+description: Auto-formatter for OCaml code with configurable profiles ranging from conventional to compact styles.
+github: https://github.com/ocaml-ppx/ocamlformat
+docs: https://ocaml.org/p/ocamlformat/latest
+languages:
+  - OCaml
+license: MIT
+category: formatter
+status: active
+writtenIn: OCaml

@@ -1,0 +1,11 @@
+name: CSharpier
+description: An opinionated C# code formatter inspired by Prettier. Minimal configuration, consistent output.
+website: https://csharpier.com
+github: https://github.com/belav/csharpier
+docs: https://csharpier.com/docs/About
+languages:
+  - C#
+license: MIT
+category: formatter
+status: active
+writtenIn: C#

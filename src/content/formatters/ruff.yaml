@@ -1,0 +1,11 @@
+name: Ruff
+description: An extremely fast Python linter and formatter written in Rust. Drop-in replacement for Black, isort, and many flake8 plugins.
+website: https://docs.astral.sh/ruff/
+github: https://github.com/astral-sh/ruff
+docs: https://docs.astral.sh/ruff/formatter/
+languages:
+  - Python
+license: MIT
+category: linter-with-formatting
+status: active
+writtenIn: Rust

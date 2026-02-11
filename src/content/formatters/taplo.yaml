@@ -1,0 +1,10 @@
+name: Taplo
+description: A TOML toolkit with a built-in formatter, validator, and language server. Handles TOML files with configurable style rules.
+website: https://taplo.tamasfe.dev
+github: https://github.com/tamasfe/taplo
+languages:
+  - TOML
+license: MIT
+category: formatter
+status: active
+writtenIn: Rust

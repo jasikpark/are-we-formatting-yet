@@ -1,0 +1,10 @@
+name: gofmt
+description: The standard Go code formatter. Ships with the Go toolchain and enforces a single canonical style.
+website: https://go.dev
+docs: https://pkg.go.dev/cmd/gofmt
+languages:
+  - Go
+license: BSD-3-Clause
+category: formatter
+status: active
+writtenIn: Go

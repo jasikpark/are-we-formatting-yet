@@ -1,0 +1,11 @@
+name: scalafmt
+description: Code formatter for Scala with highly configurable formatting rules and IDE integration.
+website: https://scalameta.org/scalafmt/
+github: https://github.com/scalameta/scalafmt
+docs: https://scalameta.org/scalafmt/docs/configuration.html
+languages:
+  - Scala
+license: Apache-2.0
+category: formatter
+status: active
+writtenIn: Scala

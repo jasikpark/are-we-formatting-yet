@@ -1,0 +1,216 @@
+---
+import Layout from "../layouts/Layout.astro";
+import { getCollection } from "astro:content";
+
+const allFormatters = await getCollection("formatters");
+
+const standalone = allFormatters.filter((f) => !f.data.pluginFor);
+const plugins = allFormatters.filter((f) => f.data.pluginFor);
+
+const byStatus = (a: (typeof allFormatters)[0], b: (typeof allFormatters)[0]) => {
+    const statusOrder: Record<string, number> = { active: 0, maintained: 1, deprecated: 2 };
+    const statusDiff = (statusOrder[a.data.status] ?? 3) - (statusOrder[b.data.status] ?? 3);
+    if (statusDiff !== 0) return statusDiff;
+    return a.data.name.localeCompare(b.data.name);
+};
+
+const sorted = [...standalone.sort(byStatus), ...plugins.sort(byStatus)];
+
+const allLanguages = [
+    ...new Set(sorted.flatMap((f) => f.data.languages)),
+].sort();
+const activeCount = sorted.filter((f) => f.data.status === "active").length;
+---
+
+<Layout>
+    <main>
+        <section class="hero">
+            <h1 class="hero-title">
+                are we <span class="highlight">formatting</span> yet?
+            </h1>
+            <p class="hero-answer">yes.</p>
+            <p class="hero-subtitle">
+                A catalog of code formatting tools across every language and
+                ecosystem.
+            </p>
+            <div class="stats">
+                <div class="stat">
+                    <span class="stat-number">{sorted.length}</span>
+                    <span class="stat-label">formatters</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-number">{allLanguages.length}</span>
+                    <span class="stat-label">languages</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-number">{activeCount}</span>
+                    <span class="stat-label">active</span>
+                </div>
+            </div>
+        </section>
+
+        <section class="filters">
+            <input
+                type="search"
+                id="search"
+                placeholder="Search formatters..."
+                class="search-input"
+            />
+            <div class="language-filters" id="language-filters">
+                <button class="chip active" data-language="all">All</button>
+                {
+                    allLanguages.map((lang) => (
+                        <button class="chip" data-language={lang}>
+                            {lang}
+                        </button>
+                    ))
+                }
+            </div>
+        </section>
+
+        <section class="grid" id="formatter-grid">
+            {
+                sorted.map((formatter) => (
+                    <article
+                        class:list={["card", { "is-plugin": formatter.data.pluginFor }]}
+                        data-languages={JSON.stringify(
+                            formatter.data.languages,
+                        )}
+                        data-status={formatter.data.status}
+                        data-plugin={formatter.data.pluginFor ?? ""}
+                        data-search={`${formatter.data.name} ${formatter.data.description} ${formatter.data.languages.join(" ")} ${formatter.data.pluginFor ?? ""} ${formatter.data.npm ?? ""}`.toLowerCase()}
+                    >
+                        <div class="card-header">
+                            <span
+                                class={`status-dot status-${formatter.data.status}`}
+                                title={formatter.data.status}
+                            />
+                            <h2 class="card-name">{formatter.data.name}</h2>
+                            {formatter.data.pluginFor && (
+                                <span class="card-plugin-badge">
+                                    {formatter.data.pluginFor} plugin
+                                </span>
+                            )}
+                        </div>
+                        <p class="card-description">
+                            {formatter.data.description}
+                        </p>
+                        <div class="card-languages">
+                            {formatter.data.languages.map((lang) => (
+                                <span class="lang-badge">{lang}</span>
+                            ))}
+                        </div>
+                        <div class="card-meta">
+                            <span class="card-license">
+                                {formatter.data.license}
+                            </span>
+                            {formatter.data.writtenIn && (
+                                <span class="card-written-in">
+                                    Built with {formatter.data.writtenIn}
+                                </span>
+                            )}
+                        </div>
+                        <div class="card-links">
+                            {formatter.data.github && (
+                                <a
+                                    href={formatter.data.github}
+                                    target="_blank"
+                                    rel="noopener"
+                                    class="card-link"
+                                >
+                                    GitHub
+                                </a>
+                            )}
+                            {formatter.data.website && (
+                                <a
+                                    href={formatter.data.website}
+                                    target="_blank"
+                                    rel="noopener"
+                                    class="card-link"
+                                >
+                                    Website
+                                </a>
+                            )}
+                            {formatter.data.docs && (
+                                <a
+                                    href={formatter.data.docs}
+                                    target="_blank"
+                                    rel="noopener"
+                                    class="card-link"
+                                >
+                                    Docs
+                                </a>
+                            )}
+                        </div>
+                    </article>
+                ))
+            }
+        </section>
+
+        <p class="result-count" id="result-count"></p>
+
+        <footer class="footer">
+            <p>
+                Know a formatter we're missing?{" "}
+                <a
+                    href="https://github.com/jasikpark/are-we-formatting-yet"
+                    target="_blank"
+                    rel="noopener"
+                >
+                    Submit a PR
+                </a>
+            </p>
+        </footer>
+    </main>
+</Layout>
+
+<script>
+    const search = document.getElementById("search") as HTMLInputElement;
+    const chips = document.querySelectorAll<HTMLButtonElement>(".chip");
+    const cards = document.querySelectorAll<HTMLElement>(".card");
+    const resultCount = document.getElementById("result-count")!;
+
+    let activeLanguage = "all";
+
+    function filterCards() {
+        const query = search.value.toLowerCase().trim();
+        let visible = 0;
+
+        cards.forEach((card) => {
+            const searchText = card.dataset.search ?? "";
+            const languages: string[] = JSON.parse(
+                card.dataset.languages ?? "[]",
+            );
+            const languagesLower = languages.map((l) => l.toLowerCase());
+
+            const matchesSearch = !query || searchText.includes(query);
+            const matchesLanguage =
+                activeLanguage === "all" ||
+                languagesLower.includes(activeLanguage.toLowerCase());
+
+            if (matchesSearch && matchesLanguage) {
+                card.style.display = "";
+                visible++;
+            } else {
+                card.style.display = "none";
+            }
+        });
+
+        resultCount.textContent =
+            visible === cards.length
+                ? ""
+                : `Showing ${visible} of ${cards.length} formatters`;
+    }
+
+    search.addEventListener("input", filterCards);
+
+    chips.forEach((chip) => {
+        // TODO: if clicked second time, should reset to "all"
+        chip.addEventListener("click", () => {
+            chips.forEach((c) => c.classList.remove("active"));
+            chip.classList.add("active");
+            activeLanguage = chip.dataset.language ?? "all";
+            filterCards();
+        });
+    });
+</script>

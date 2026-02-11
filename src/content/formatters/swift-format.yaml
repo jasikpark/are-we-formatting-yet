@@ -1,0 +1,9 @@
+name: swift-format
+description: The official Swift code formatter from Apple. Formats Swift source code according to configurable rules.
+github: https://github.com/swiftlang/swift-format
+languages:
+  - Swift
+license: Apache-2.0
+category: formatter
+status: active
+writtenIn: Swift

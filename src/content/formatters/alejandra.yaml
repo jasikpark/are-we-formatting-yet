@@ -1,0 +1,9 @@
+name: Alejandra
+description: An opinionated Nix code formatter with a focus on consistency and readability.
+github: https://github.com/kamadorueda/alejandra
+languages:
+  - Nix
+license: Unlicense
+category: formatter
+status: active
+writtenIn: Rust

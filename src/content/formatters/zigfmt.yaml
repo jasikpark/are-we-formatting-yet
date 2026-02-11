@@ -1,0 +1,10 @@
+name: zig fmt
+description: The built-in formatter for Zig, shipped with the compiler. Enforces the official Zig style guide.
+website: https://ziglang.org
+docs: https://ziglang.org/documentation/master/
+languages:
+  - Zig
+license: MIT
+category: formatter
+status: active
+writtenIn: Zig

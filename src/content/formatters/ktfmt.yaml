@@ -1,0 +1,9 @@
+name: ktfmt
+description: A Kotlin code formatter by Meta that reformats source code to a uniform style. Based on google-java-format.
+github: https://github.com/facebook/ktfmt
+languages:
+  - Kotlin
+license: Apache-2.0
+category: formatter
+status: active
+writtenIn: Kotlin

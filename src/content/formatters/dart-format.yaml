@@ -1,0 +1,10 @@
+name: dart format
+description: The official Dart code formatter included in the Dart SDK. Applies a single canonical style.
+website: https://dart.dev
+docs: https://dart.dev/tools/dart-format
+languages:
+  - Dart
+license: BSD-3-Clause
+category: formatter
+status: active
+writtenIn: Dart

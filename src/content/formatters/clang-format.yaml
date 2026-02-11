@@ -1,0 +1,17 @@
+name: clang-format
+description: A tool to format C, C++, Java, JavaScript, and other languages based on configurable style rules. Part of the LLVM project.
+website: https://clang.llvm.org/docs/ClangFormat.html
+github: https://github.com/llvm/llvm-project
+docs: https://clang.llvm.org/docs/ClangFormatStyleOptions.html
+languages:
+  - C
+  - C++
+  - Java
+  - JavaScript
+  - Objective-C
+  - Protobuf
+  - C#
+license: Apache-2.0
+category: formatter
+status: active
+writtenIn: C++

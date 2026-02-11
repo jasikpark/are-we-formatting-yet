@@ -1,0 +1,10 @@
+name: mix format
+description: The built-in code formatter for Elixir, shipped with the language. Enforces a consistent style with minimal configuration.
+website: https://elixir-lang.org
+docs: https://hexdocs.pm/mix/Mix.Tasks.Format.html
+languages:
+  - Elixir
+license: Apache-2.0
+category: formatter
+status: active
+writtenIn: Elixir

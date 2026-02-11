@@ -1,0 +1,9 @@
+name: elm-format
+description: The standard formatter for Elm source code. Enforces a single canonical style with zero configuration.
+github: https://github.com/avh4/elm-format
+languages:
+  - Elm
+license: BSD-3-Clause
+category: formatter
+status: active
+writtenIn: Haskell

@@ -1,0 +1,9 @@
+name: erlfmt
+description: An automated Erlang code formatter by WhatsApp. Focuses on preserving intent while enforcing consistent style.
+github: https://github.com/WhatsApp/erlfmt
+languages:
+  - Erlang
+license: Apache-2.0
+category: formatter
+status: maintained
+writtenIn: Erlang

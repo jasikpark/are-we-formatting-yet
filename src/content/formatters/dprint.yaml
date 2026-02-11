@@ -1,0 +1,19 @@
+name: dprint
+description: A pluggable and configurable code formatting platform written in Rust. Extremely fast with support for many languages via plugins.
+website: https://dprint.dev
+github: https://github.com/dprint/dprint
+docs: https://dprint.dev/overview/
+languages:
+  - JavaScript
+  - TypeScript
+  - JSON
+  - Markdown
+  - TOML
+  - CSS
+  - HTML
+  - Rust
+  - Dockerfile
+license: MIT
+category: formatter
+status: active
+writtenIn: Rust

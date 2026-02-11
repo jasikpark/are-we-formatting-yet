@@ -1,0 +1,9 @@
+name: google-java-format
+description: Reformats Java source code to comply with Google Java Style. Opinionated with zero configuration.
+github: https://github.com/google/google-java-format
+languages:
+  - Java
+license: Apache-2.0
+category: formatter
+status: active
+writtenIn: Java
