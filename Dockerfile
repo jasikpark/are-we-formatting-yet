@@ -1,4 +1,4 @@
-# syntax = docker/dockerfile:1
+# syntax = docker/dockerfile:1@sha256:b6afd42430b15f2d2a4c5a02b919e98a525b785b1aaff16747d2f623364e39b6
 
 # Adjust NODE_VERSION as desired
 ARG NODE_VERSION=20.8.0
@@ -39,7 +39,7 @@ RUN pnpm prune --prod
 
 
 # Final stage for app image
-FROM nginx
+FROM nginx@sha256:341bf0f3ce6c5277d6002cf6e1fb0319fa4252add24ab6a0e262e0056d313208
 
 # Copy built application
 COPY --from=build /app/dist /usr/share/nginx/html
