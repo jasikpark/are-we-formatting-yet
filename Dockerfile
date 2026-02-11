@@ -41,6 +41,9 @@ RUN pnpm prune --prod
 # Final stage for app image
 FROM nginx@sha256:341bf0f3ce6c5277d6002cf6e1fb0319fa4252add24ab6a0e262e0056d313208
 
+# Copy nginx configuration
+COPY nginx.conf /etc/nginx/conf.d/default.conf
+
 # Copy built application
 COPY --from=build /app/dist /usr/share/nginx/html
 
