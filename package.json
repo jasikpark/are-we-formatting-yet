@@ -10,7 +10,7 @@
     "format:check": "prettier --check .",
     "biome": "biome check --fix",
     "biome:check": "biome ci",
-    "typecheck": "pnpm '/^check:.*/'",
+    "typecheck": "pnpm '/^typecheck:.*/'",
     "typecheck:typescript": "tsc -p ./tsconfig.json",
     "typecheck:astro": "astro check"
   },
