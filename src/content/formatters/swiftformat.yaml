@@ -1,0 +1,9 @@
+name: SwiftFormat
+description: A command-line tool and Xcode Extension for reformatting Swift code. A community-maintained alternative to Apple's swift-format with extensive rule configuration.
+github: https://github.com/nicklockwood/SwiftFormat
+languages:
+  - Swift
+license: MIT
+category: formatter
+status: active
+writtenIn: Swift

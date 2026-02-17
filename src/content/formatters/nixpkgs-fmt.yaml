@@ -1,0 +1,9 @@
+name: nixpkgs-fmt
+description: A Nix code formatter for nixpkgs. An alternative to Alejandra, opinionated about whitespace and structure.
+github: https://github.com/nix-community/nixpkgs-fmt
+languages:
+  - Nix
+license: Apache-2.0
+category: formatter
+status: maintained
+writtenIn: Rust

@@ -1,0 +1,11 @@
+name: gleam format
+description: Built-in formatter for Gleam, a friendly language for building type-safe systems. Ships with the Gleam CLI.
+website: https://gleam.run
+github: https://github.com/gleam-lang/gleam
+docs: https://gleam.run/writing-gleam/
+languages:
+  - Gleam
+license: Apache-2.0
+category: formatter
+status: active
+writtenIn: Rust

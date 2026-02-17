@@ -1,0 +1,10 @@
+name: goimports
+description: Extends gofmt to also manage Go import statements — adding missing imports and removing unused ones automatically.
+github: https://github.com/golang/tools
+docs: https://pkg.go.dev/golang.org/x/tools/cmd/goimports
+languages:
+  - Go
+license: BSD-3-Clause
+category: formatter
+status: active
+writtenIn: Go

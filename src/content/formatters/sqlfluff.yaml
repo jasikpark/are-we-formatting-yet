@@ -1,0 +1,11 @@
+name: SQLFluff
+description: A dialect-flexible SQL linter and formatter. Supports many SQL dialects including ANSI, BigQuery, Snowflake, PostgreSQL, MySQL, and more.
+website: https://www.sqlfluff.com
+github: https://github.com/sqlfluff/sqlfluff
+docs: https://docs.sqlfluff.com
+languages:
+  - SQL
+license: MIT
+category: linter-with-formatting
+status: active
+writtenIn: Python

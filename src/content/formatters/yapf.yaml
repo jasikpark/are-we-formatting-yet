@@ -1,0 +1,9 @@
+name: yapf
+description: A Python formatter from Google that reformats code to the best formatting that conforms to the style guide, even if the original code didn't violate it.
+github: https://github.com/google/yapf
+languages:
+  - Python
+license: Apache-2.0
+category: formatter
+status: maintained
+writtenIn: Python

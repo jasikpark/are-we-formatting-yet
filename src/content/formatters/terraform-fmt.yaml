@@ -1,0 +1,12 @@
+name: terraform fmt
+description: Built-in formatter for HashiCorp Configuration Language (HCL), shipped with the Terraform CLI. Rewrites .tf and .tfvars files to canonical style.
+website: https://developer.hashicorp.com/terraform/cli/commands/fmt
+github: https://github.com/hashicorp/terraform
+docs: https://developer.hashicorp.com/terraform/cli/commands/fmt
+languages:
+  - Terraform
+  - HCL
+license: BUSL-1.1
+category: formatter
+status: active
+writtenIn: Go

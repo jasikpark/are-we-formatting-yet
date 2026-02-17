@@ -1,0 +1,13 @@
+name: dotnet format
+description: Official .NET code formatter from Microsoft. Ships as part of the .NET SDK since .NET 6. Supports C#, Visual Basic, and F#.
+website: https://learn.microsoft.com/en-us/dotnet/core/tools/dotnet-format
+github: https://github.com/dotnet/format
+docs: https://learn.microsoft.com/en-us/dotnet/core/tools/dotnet-format
+languages:
+  - C#
+  - Visual Basic
+  - F#
+license: MIT
+category: formatter
+status: active
+writtenIn: C#
