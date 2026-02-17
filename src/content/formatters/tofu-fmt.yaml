@@ -1,0 +1,12 @@
+name: tofu fmt
+description: Built-in formatter for OpenTofu, the open-source fork of Terraform. Rewrites .tf and .tfvars files to canonical HCL style.
+website: https://opentofu.org
+github: https://github.com/opentofu/opentofu
+docs: https://opentofu.org/docs/cli/commands/fmt/
+languages:
+  - Terraform
+  - HCL
+license: MPL-2.0
+category: formatter
+status: active
+writtenIn: Go

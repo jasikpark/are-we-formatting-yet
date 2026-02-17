@@ -1,0 +1,10 @@
+name: isort
+description: Sorts Python imports alphabetically and separates them into sections automatically. Compatible with Black and other formatters.
+github: https://github.com/PyCQA/isort
+docs: https://pycqa.github.io/isort/
+languages:
+  - Python
+license: MIT
+category: formatter
+status: active
+writtenIn: Python

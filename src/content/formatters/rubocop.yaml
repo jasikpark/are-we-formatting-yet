@@ -1,0 +1,11 @@
+name: RuboCop
+description: A Ruby static code analyzer and formatter based on the community Ruby style guide. Auto-corrects many issues and is highly configurable.
+website: https://rubocop.org
+github: https://github.com/rubocop/rubocop
+docs: https://docs.rubocop.org
+languages:
+  - Ruby
+license: MIT
+category: linter-with-formatting
+status: active
+writtenIn: Ruby

@@ -1,0 +1,10 @@
+name: PHP-CS-Fixer
+description: Automatically fixes PHP coding standard violations. Supports PSR-1, PSR-2, PSR-12, and many configurable rules.
+github: https://github.com/PHP-CS-Fixer/PHP-CS-Fixer
+docs: https://github.com/PHP-CS-Fixer/PHP-CS-Fixer/blob/master/doc/installation.rst
+languages:
+  - PHP
+license: MIT
+category: formatter
+status: active
+writtenIn: PHP

@@ -1,0 +1,11 @@
+name: typst fmt
+description: Built-in formatter for Typst, a modern markup-based typesetting language. Ships with the Typst CLI.
+website: https://typst.app
+github: https://github.com/typst/typst
+docs: https://typst.app/docs/reference/syntax/
+languages:
+  - Typst
+license: Apache-2.0
+category: formatter
+status: active
+writtenIn: Rust

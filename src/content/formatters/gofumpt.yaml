@@ -1,0 +1,9 @@
+name: gofumpt
+description: A stricter version of gofmt that enforces additional formatting rules. Fully compatible with gofmt output.
+github: https://github.com/mvdan/gofumpt
+languages:
+  - Go
+license: BSD-3-Clause
+category: formatter
+status: active
+writtenIn: Go

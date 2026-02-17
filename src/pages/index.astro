@@ -100,7 +100,7 @@ const activeCount = sorted.filter((f) => f.data.status === "active").length;
                         </p>
                         <div class="card-languages">
                             {formatter.data.languages.map((lang) => (
-                                <span class="lang-badge">{lang}</span>
+                                <button class="lang-badge" data-language={lang}>{lang}</button>
                             ))}
                         </div>
                         <div class="card-meta">
@@ -236,5 +236,30 @@ const activeCount = sorted.filter((f) => f.data.status === "active").length;
 
           filterCards();
         });
+    });
+
+    const langBadges = document.querySelectorAll<HTMLButtonElement>(".lang-badge");
+
+    function updateLangBadgeStates() {
+        langBadges.forEach((badge) => {
+            badge.classList.toggle("active", activeLanguage !== "all" && badge.dataset.language === activeLanguage);
+        });
+    }
+
+    langBadges.forEach((badge) => {
+        badge.addEventListener("click", () => {
+            const lang = badge.dataset.language ?? "all";
+            if (activeLanguage === lang) {
+                setActiveLanguage("all");
+            } else {
+                setActiveLanguage(lang);
+            }
+            updateLangBadgeStates();
+            filterCards();
+        });
+    });
+
+    chips.forEach((chip) => {
+        chip.addEventListener("click", updateLangBadgeStates);
     });
 </script>

@@ -1,0 +1,9 @@
+name: autopep8
+description: Automatically formats Python code to conform to PEP 8 style guidelines. Uses pycodestyle to determine what needs to be fixed.
+github: https://github.com/hhatto/autopep8
+languages:
+  - Python
+license: MIT
+category: formatter
+status: active
+writtenIn: Python

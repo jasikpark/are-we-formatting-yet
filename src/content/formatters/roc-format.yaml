@@ -1,0 +1,10 @@
+name: roc format
+description: Built-in formatter for the Roc programming language. Ships with the Roc CLI.
+website: https://www.roc-lang.org
+github: https://github.com/roc-lang/roc
+languages:
+  - Roc
+license: UPL-1.0
+category: formatter
+status: active
+writtenIn: Rust

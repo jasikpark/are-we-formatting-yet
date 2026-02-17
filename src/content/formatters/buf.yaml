@@ -1,0 +1,11 @@
+name: buf
+description: A build, lint, and format tool for Protocol Buffers. The modern standard for managing Protobuf schemas, with dialect-aware formatting.
+website: https://buf.build
+github: https://github.com/bufbuild/buf
+docs: https://buf.build/docs/format/style
+languages:
+  - Protobuf
+license: Apache-2.0
+category: linter-with-formatting
+status: active
+writtenIn: Go
