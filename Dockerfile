@@ -39,7 +39,7 @@ RUN pnpm prune --prod
 
 
 # Final stage for app image
-FROM nginx@sha256:0236ee02dcbce00b9bd83e0f5fbc51069e7e1161bd59d99885b3ae1734f3392e
+FROM nginx@sha256:abe47724e466aeab9a345d8e46a221c2fa8953c7848bb4a3bd9976a7199f8cf2
 
 # Copy nginx configuration
 COPY nginx.conf /etc/nginx/conf.d/default.conf
